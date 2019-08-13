@@ -6,7 +6,7 @@
   "bin": {
     "attentio": "./bin/run"
   },
-  "bugs": "https://github.com/jobith93/attentio-cli/issues",
+  "bugs": "https://github.com/three38inc/attentio-cli/issues",
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
@@ -37,7 +37,7 @@
     "/oclif.manifest.json",
     "/src"
   ],
-  "homepage": "https://github.com/jobith93/attentio-cli",
+  "homepage": "https://github.com/three38inc/attentio-cli",
   "keywords": [
     "oclif"
   ],
@@ -55,7 +55,7 @@
       "@oclif/plugin-warn-if-update-available"
     ]
   },
-  "repository": "jobith93/attentio-cli",
+  "repository": "three38inc/attentio-cli",
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "prepack": "oclif-dev manifest && oclif-dev readme",
