@@ -25,6 +25,7 @@ class SetCommand extends Command {
     }
   }
 
+  // set the current username in the config.json file
   setUsername(name){
     config.username = name
     // write new config data
@@ -32,6 +33,7 @@ class SetCommand extends Command {
     this.log(chalk `Current user has been changed to : {bold.green.underline ${config.username}}`)
   }
 
+  // show list of available users to pick from the remote /users endpoint
   showUsersList(){
     let self = this
     // start the spinner
@@ -58,9 +60,9 @@ class SetCommand extends Command {
   }
 }
 
-SetCommand.description = `Describe the command here
+SetCommand.description = `Command is used to set current user of the attentio-cli.
 ...
-Extra documentation goes here
+Command can also be used without an argument or option. If so used, then a list of available users will be provided to choose from, to be selected as the current user.
 `
 
 SetCommand.flags = {

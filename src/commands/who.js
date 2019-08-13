@@ -14,9 +14,6 @@ class WhoCommand extends Command {
   }
 }
 
-WhoCommand.description = `Describe the command here
-...
-Extra documentation goes here
-`
+WhoCommand.description = `Command is used to know who is the present current user.`
 
 module.exports = WhoCommand

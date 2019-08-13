@@ -40,6 +40,7 @@ class PingCommand extends Command {
     });
   }
 
+  // show list of available users to pick from the remote /users endpoint
   showUsersList(){
     let self = this
     // start the spinner
@@ -67,9 +68,9 @@ class PingCommand extends Command {
 
 }
 
-PingCommand.description = `Describe the command here
+PingCommand.description = `Command is used to pint a particular user of the attentio-cli via the attentio-extension.
 ...
-Extra documentation goes here
+Command can also be used without an argument or option. If so used, then a list of available users will be provided to choose from, to be pinged via the attentio-extension.
 `
 
 PingCommand.flags = {
