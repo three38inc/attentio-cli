@@ -1,0 +1,55 @@
+{
+  "name": "attentio-cli",
+  "description": "CLI tool for Attentio Extension",
+  "version": "0.0.0",
+  "author": "Jobith M Basheer @jobith93",
+  "bin": {
+    "attentio": "./bin/run"
+  },
+  "bugs": "https://github.com/jobith93/attentio-cli/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2",
+    "axios": "^0.19.0",
+    "chalk": "^2.4.2",
+    "cli-ux": "^5.3.1",
+    "inquirer": "^6.5.1",
+    "node-notifier": "^5.4.1",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "globby": "^10"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/src"
+  ],
+  "homepage": "https://github.com/jobith93/attentio-cli",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "UNLICENSED",
+  "main": "src/index.js",
+  "oclif": {
+    "commands": "./src/commands",
+    "bin": "attentio",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "jobith93/attentio-cli",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "prepack": "oclif-dev manifest && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}
