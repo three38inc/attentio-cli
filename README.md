@@ -20,7 +20,7 @@ $ npm install -g attentio-cli
 $ attentio COMMAND
 running command...
 $ attentio (-v|--version|version)
-attentio-cli/0.1.2 darwin-x64 node-v12.4.0
+attentio-cli/0.1.3 darwin-x64 node-v12.4.0
 $ attentio --help [COMMAND]
 USAGE
   $ attentio COMMAND
@@ -72,7 +72,7 @@ DESCRIPTION
   choose from, to be pinged via the attentio-extension.
 ```
 
-_See code: [src/commands/ping.js](https://github.com/jobith93/attentio-cli/blob/v0.1.2/src/commands/ping.js)_
+_See code: [src/commands/ping.js](https://github.com/jobith93/attentio-cli/blob/v0.1.3/src/commands/ping.js)_
 
 ## `attentio set [NAME]`
 
@@ -94,7 +94,7 @@ DESCRIPTION
   choose from, to be selected as the current user.
 ```
 
-_See code: [src/commands/set.js](https://github.com/jobith93/attentio-cli/blob/v0.1.2/src/commands/set.js)_
+_See code: [src/commands/set.js](https://github.com/jobith93/attentio-cli/blob/v0.1.3/src/commands/set.js)_
 
 ## `attentio who`
 
@@ -105,5 +105,5 @@ USAGE
   $ attentio who
 ```
 
-_See code: [src/commands/who.js](https://github.com/jobith93/attentio-cli/blob/v0.1.2/src/commands/who.js)_
+_See code: [src/commands/who.js](https://github.com/jobith93/attentio-cli/blob/v0.1.3/src/commands/who.js)_
 <!-- commandsstop -->
