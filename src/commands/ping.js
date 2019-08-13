@@ -36,7 +36,7 @@ class PingCommand extends Command {
     socket.on('connect', () => {
       socket.emit('ping user', { sender: config.username, receiver: name });
       socket.disconnect()
-      cli.action.stop(`✅`)
+      cli.action.stop(`✔`)
     });
   }
 
@@ -47,7 +47,7 @@ class PingCommand extends Command {
     cli.action.start(`Fetching users list`)
     axios.get(`${config.appURL}/users`)
       .then(function (response) {
-        cli.action.stop(`✅`)
+        cli.action.stop(`✔`)
         inquirer
           .prompt([{
             name: 'name',

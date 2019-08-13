@@ -40,7 +40,7 @@ class SetCommand extends Command {
     cli.action.start(`Fetching users list`)
     axios.get(`${config.appURL}/users`)
       .then(function (response) {
-        cli.action.stop(`✅`)
+        cli.action.stop(`✔`)
         inquirer
           .prompt([{
             name: 'name',
