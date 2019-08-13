@@ -1,7 +1,7 @@
 {
   "name": "attentio-cli",
   "description": "CLI tool for Attentio Extension",
-  "version": "0.0.0",
+  "version": "0.1.1",
   "author": "Jobith M Basheer @jobith93",
   "bin": {
     "attentio": "./bin/run"

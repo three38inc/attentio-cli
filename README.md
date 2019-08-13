@@ -12,6 +12,7 @@ CLI tool for Attentio Extension
 * [Usage](#usage)
 * [Commands](#commands)
 <!-- tocstop -->
+
 # Usage
 <!-- usage -->
 ```sh-session
@@ -19,13 +20,14 @@ $ npm install -g attentio-cli
 $ attentio COMMAND
 running command...
 $ attentio (-v|--version|version)
-attentio-cli/0.0.0 darwin-x64 node-v12.4.0
+attentio-cli/0.1.1 darwin-x64 node-v12.4.0
 $ attentio --help [COMMAND]
 USAGE
   $ attentio COMMAND
 ...
 ```
 <!-- usagestop -->
+
 # Commands
 <!-- commands -->
 * [`attentio help [COMMAND]`](#attentio-help-command)
@@ -52,7 +54,7 @@ _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.2.0
 
 ## `attentio ping [NAME]`
 
-Describe the command here
+Command is used to pint a particular user of the attentio-cli via the attentio-extension.
 
 ```
 USAGE
@@ -66,14 +68,15 @@ OPTIONS
 
 DESCRIPTION
   ...
-  Extra documentation goes here
+  Command can also be used without an argument or option. If so used, then a list of available users will be provided to 
+  choose from, to be pinged via the attentio-extension.
 ```
 
-_See code: [src/commands/ping.js](https://github.com/jobith93/attentio-cli/blob/v0.0.0/src/commands/ping.js)_
+_See code: [src/commands/ping.js](https://github.com/jobith93/attentio-cli/blob/v0.1.1/src/commands/ping.js)_
 
 ## `attentio set [NAME]`
 
-Describe the command here
+Command is used to set current user of the attentio-cli.
 
 ```
 USAGE
@@ -87,23 +90,20 @@ OPTIONS
 
 DESCRIPTION
   ...
-  Extra documentation goes here
+  Command can also be used without an argument or option. If so used, then a list of available users will be provided to 
+  choose from, to be selected as the current user.
 ```
 
-_See code: [src/commands/set.js](https://github.com/jobith93/attentio-cli/blob/v0.0.0/src/commands/set.js)_
+_See code: [src/commands/set.js](https://github.com/jobith93/attentio-cli/blob/v0.1.1/src/commands/set.js)_
 
 ## `attentio who`
 
-Describe the command here
+Command is used to know who is the present current user.
 
 ```
 USAGE
   $ attentio who
-
-DESCRIPTION
-  ...
-  Extra documentation goes here
 ```
 
-_See code: [src/commands/who.js](https://github.com/jobith93/attentio-cli/blob/v0.0.0/src/commands/who.js)_
+_See code: [src/commands/who.js](https://github.com/jobith93/attentio-cli/blob/v0.1.1/src/commands/who.js)_
 <!-- commandsstop -->
