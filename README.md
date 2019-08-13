@@ -20,7 +20,7 @@ $ npm install -g attentio-cli
 $ attentio COMMAND
 running command...
 $ attentio (-v|--version|version)
-attentio-cli/0.1.3 darwin-x64 node-v12.4.0
+attentio-cli/0.1.4 darwin-x64 node-v12.4.0
 $ attentio --help [COMMAND]
 USAGE
   $ attentio COMMAND
@@ -30,10 +30,52 @@ USAGE
 
 # Commands
 <!-- commands -->
+* [`attentio autocomplete [SHELL]`](#attentio-autocomplete-shell)
+* [`attentio commands`](#attentio-commands)
 * [`attentio help [COMMAND]`](#attentio-help-command)
 * [`attentio ping [NAME]`](#attentio-ping-name)
 * [`attentio set [NAME]`](#attentio-set-name)
+* [`attentio update [CHANNEL]`](#attentio-update-channel)
 * [`attentio who`](#attentio-who)
+
+## `attentio autocomplete [SHELL]`
+
+display autocomplete installation instructions
+
+```
+USAGE
+  $ attentio autocomplete [SHELL]
+
+ARGUMENTS
+  SHELL  shell type
+
+OPTIONS
+  -r, --refresh-cache  Refresh cache (ignores displaying instructions)
+
+EXAMPLES
+  $ attentio autocomplete
+  $ attentio autocomplete bash
+  $ attentio autocomplete zsh
+  $ attentio autocomplete --refresh-cache
+```
+
+_See code: [@oclif/plugin-autocomplete](https://github.com/oclif/plugin-autocomplete/blob/v0.1.3/src/commands/autocomplete/index.ts)_
+
+## `attentio commands`
+
+list all the commands
+
+```
+USAGE
+  $ attentio commands
+
+OPTIONS
+  -h, --help  show CLI help
+  -j, --json  output in json format
+  --hidden    also show hidden commands
+```
+
+_See code: [@oclif/plugin-commands](https://github.com/oclif/plugin-commands/blob/v1.2.2/src/commands/commands.ts)_
 
 ## `attentio help [COMMAND]`
 
@@ -72,7 +114,7 @@ DESCRIPTION
   choose from, to be pinged via the attentio-extension.
 ```
 
-_See code: [src/commands/ping.js](https://github.com/jobith93/attentio-cli/blob/v0.1.3/src/commands/ping.js)_
+_See code: [src/commands/ping.js](https://github.com/jobith93/attentio-cli/blob/v0.1.4/src/commands/ping.js)_
 
 ## `attentio set [NAME]`
 
@@ -94,7 +136,18 @@ DESCRIPTION
   choose from, to be selected as the current user.
 ```
 
-_See code: [src/commands/set.js](https://github.com/jobith93/attentio-cli/blob/v0.1.3/src/commands/set.js)_
+_See code: [src/commands/set.js](https://github.com/jobith93/attentio-cli/blob/v0.1.4/src/commands/set.js)_
+
+## `attentio update [CHANNEL]`
+
+update the attentio CLI
+
+```
+USAGE
+  $ attentio update [CHANNEL]
+```
+
+_See code: [@oclif/plugin-update](https://github.com/oclif/plugin-update/blob/v1.3.9/src/commands/update.ts)_
 
 ## `attentio who`
 
@@ -105,5 +158,5 @@ USAGE
   $ attentio who
 ```
 
-_See code: [src/commands/who.js](https://github.com/jobith93/attentio-cli/blob/v0.1.3/src/commands/who.js)_
+_See code: [src/commands/who.js](https://github.com/jobith93/attentio-cli/blob/v0.1.4/src/commands/who.js)_
 <!-- commandsstop -->
