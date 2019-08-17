@@ -29,12 +29,11 @@ class PingCommand extends Command {
   pingUser(name){
     // start the spinner
     cli.action.start(`Sending your ping to ${name}`)
-    // connect to socket and emit `ping user`
+    // connect to socket and emit `pingUser`
     let socket = io(config.appURL, { query: `username=${config.username}` })
-    socket.emit('ping user', { sender: config.username, receiver: name });
 
     socket.on('connect', () => {
-      socket.emit('ping user', { sender: config.username, receiver: name });
+      socket.emit('pingUser', { sender: config.username, receiver: name });
       socket.disconnect()
       cli.action.stop(`✔`)
     });
